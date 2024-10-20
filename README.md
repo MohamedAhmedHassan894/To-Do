@@ -39,38 +39,6 @@ Packages:
     Json Serializable: For easy JSON encoding/decoding.
     Mockito: For testing and mocking dependencies.
 
-🏗️ Project Structure
-
-css
-
-lib/
-│
-├── data/
-│   ├── models/
-│   │   └── task_model.dart
-│   ├── repositories/
-│   │   └── task_repository_impl.dart
-│   └── task_repository.dart
-│
-├── domain/
-│   ├── entities/
-│   │   └── task.dart
-│   ├── usecases/
-│   │   ├── add_task.dart
-│   │   ├── get_tasks.dart
-│   │   └── mark_task_completed.dart
-│   └── repository/
-│
-├── presentation/
-│   ├── controllers/
-│   │   └── task_controller.dart
-│   ├── screens/
-│   │   └── task_screen.dart
-│   └── widgets/
-│
-├── main.dart
-└── injection.dart
-
 ⚙️ Setup & Installation
 
     Clone the repository:
@@ -118,12 +86,12 @@ flutter test
 The project uses get_it for dependency injection. The injection.dart file contains the necessary configurations for injecting repositories and controllers throughout the app.
 
 dart
-
 final getIt = GetIt.instance;
 
 void setup() {
-  getIt.registerLazySingleton<TaskRepository>(
-    () => TaskRepositoryImpl(sharedPreferences: getIt()),
-  );
+
+  getIt.registerLazySingleton<TaskRepository>(  () => TaskRepositoryImpl(sharedPreferences: getIt()),  );
+  
   getIt.registerLazySingleton(() => TaskController(getIt()));
 }
+
