@@ -1,7 +1,7 @@
-📝 To-Do List App
+## 📝 To-Do List App
 
 This is a simple To-Do List app built with Flutter. The app allows users to add, view, and mark tasks as completed. It follows clean architecture principles and uses various state-of-the-art Flutter packages, including GetX for state management and get_it for dependency injection.
-🚀 Features
+## 🚀 Features
 
     Add new tasks with a title.
     View a list of all tasks.
@@ -12,7 +12,12 @@ This is a simple To-Do List app built with Flutter. The app allows users to add,
     State management using GetX.
     Unit tests for core functionalities.
 
-🛠️ Technologies & Architecture
+## Development Environment
+
+This project uses [FVM](https://fvm.app/) to manage Flutter versions. The Flutter version used in this project is **3.24.2**.
+
+
+## 🛠️ Technologies & Architecture
 Architecture:
 
 The project follows clean architecture principles, breaking the app into the following layers:
@@ -30,7 +35,7 @@ The project follows clean architecture principles, breaking the app into the fol
         The UI layer, responsible for rendering task lists, forms, and other elements.
         Uses GetX for managing the state of the app.
 
-Packages:
+## Packages:
 
     Flutter: The core framework.
     GetX: For state management and routing.
@@ -39,7 +44,7 @@ Packages:
     Json Serializable: For easy JSON encoding/decoding.
     Mockito: For testing and mocking dependencies.
 
-⚙️ Setup & Installation
+## ⚙️ Setup & Installation
 
     Clone the repository:
 
@@ -75,7 +80,7 @@ bash
 
 flutter test
 
-🧱 Core Functionalities
+## 🧱 Core Functionalities
 
     Add Task: Adds a new task with a title. Tasks are stored using Shared Preferences for persistence.
     Retrieve Tasks: Fetches the list of tasks (completed and uncompleted) from local storage.
