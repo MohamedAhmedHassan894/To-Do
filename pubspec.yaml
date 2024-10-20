@@ -1,5 +1,5 @@
 name: to_do
-description: "A new Flutter project."
+description: "To-Do List App"
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -17,11 +17,10 @@ dependencies:
   shared_preferences:
   json_annotation: ^4.8.0
   get_it: ^7.2.0
-  mockito: ^5.4.4
+
 
 
 dev_dependencies:
-  mockito: ^5.3.2
   flutter_test:
     sdk: flutter
 
